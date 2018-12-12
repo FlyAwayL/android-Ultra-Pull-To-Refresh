@@ -186,10 +186,11 @@ public class PtrDemoHomeFragment extends BlockMenuFragment {
             }
         }));
 
-        itemInfos.add(newItemInfo(R.string.ptr_demo_placeholder, R.color.cube_mints_4d90fe, new OnClickListener() {
+        itemInfos.add(newItemInfo(R.string.ptr_demo_recyclerView, R.color.cube_mints_4d90fe, new OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                getContext().pushFragmentToBackStack(WithRecyclerView.class, null);
             }
         }));
         itemInfos.add(newItemInfo(R.string.ptr_demo_placeholder, R.color.cube_mints_4d90fe, new OnClickListener() {
